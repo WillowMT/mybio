@@ -1,46 +1,28 @@
-/* body {
-    margin:0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-} */
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
-
-body {
-  background: #fff7ee;
-  font-family: Fira Mono;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:0;
+.wrapper {
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-h3 {
-  position: relative;
-  width: 53ch;
-  font-weight: bold;
-  animation: type 3s steps(53), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
+.typing-demo {
+    width: 29ch;
+    animation: typing 2s steps(29), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
-
+    
 @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+    50% {
+        border-color: transparent
+    }
 }
-
-
-
