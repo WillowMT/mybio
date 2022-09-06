@@ -22,9 +22,9 @@ body {
 
 h3 {
   position: relative;
-  width: 52ch;
+  width: 53ch;
   font-weight: bold;
-  animation: type 5s steps(52), blink 0.1s step-end infinite alternate;
+  animation: type 3s steps(53), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
