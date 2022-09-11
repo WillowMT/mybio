@@ -1,390 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-
-<style id="webmakerstyle">
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-@keyframes rotate {
-  to {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0.001;
-    border-radius: 50%; } }
-
-.container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: #4AC29A;
-  background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);
-  background: linear-gradient(to right, #BDFFF3, #4AC29A);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .container li:nth-child(1) {
-    width: 78px;
-    height: 78px;
-    position: absolute;
-    left: 8%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 12s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(2) {
-    width: 71px;
-    height: 71px;
-    position: absolute;
-    left: 16%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 37s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(3) {
-    width: 67px;
-    height: 67px;
-    position: absolute;
-    left: 24%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 22s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(4) {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 32%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 19s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(5) {
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    left: 40%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 8s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(6) {
-    width: 58px;
-    height: 58px;
-    position: absolute;
-    left: 48%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 30s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(7) {
-    width: 76px;
-    height: 76px;
-    position: absolute;
-    left: 56%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 32s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(8) {
-    width: 27px;
-    height: 27px;
-    position: absolute;
-    left: 64%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 17s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(9) {
-    width: 37px;
-    height: 37px;
-    position: absolute;
-    left: 72%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 27s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(10) {
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    left: 80%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 36s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(11) {
-    width: 77px;
-    height: 77px;
-    position: absolute;
-    left: 88%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 39s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(12) {
-    width: 77px;
-    height: 77px;
-    position: absolute;
-    left: 96%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 20s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(13) {
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    left: 104%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 29s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(14) {
-    width: 19px;
-    height: 19px;
-    position: absolute;
-    left: 112%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 44s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(15) {
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    left: 120%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 36s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(16) {
-    width: 44px;
-    height: 44px;
-    position: absolute;
-    left: 128%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 7s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(17) {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 136%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 12s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(18) {
-    width: 53px;
-    height: 53px;
-    position: absolute;
-    left: 144%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 22s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(19) {
-    width: 86px;
-    height: 86px;
-    position: absolute;
-    left: 152%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 35s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-  .container li:nth-child(20) {
-    width: 61px;
-    height: 61px;
-    position: absolute;
-    left: 160%;
-    bottom: -30%;
-    background-color: white;
-    border-radius: 10px;
-    animation: rotate 10s linear infinite;
-    animation-duration: 27s;
-    list-style-type: none;
-    transform: translateY(0px) rotate(0deg); }
-
-body {
-  margin: 0; }
-
-.txt {
-  width: 300px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  top: 0px;
-  z-index: 2; }
-
-li {
-  list-style-type: none; }
-
-* {
-  font-family: 'Montserrat', sans-serif;
-  color: darkgreen; }
-
-h1 {
-  text-align: center; }
-
-hr {
-  width: 80%;
-  border: 1px solid white;
-  opacity: 0.5; }
-
-.box {
-  margin-top: 10%;
-  display: flex;
-  justify-content: center; }
-  .box div.main {
-    border-right: 1px solid white;
-    padding-right: 3px;
-    animation: blink 1s linear infinite; }
-  .box div {
-    margin: 0px 2px; }
-
-@keyframes blink {
-  to {
-    border: hidden; } }
-
-p {
-  text-align: center;
-  font-size: 10px;
-  margin-top:10%;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello to You!</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div class="container">
-	<div class="txt">
-		<h1>@waiyanmt</h1>
-		<hr>
-		<div class="box">
-			<div>I am a</div>
-			<div class="main"></div>
-			<div>developer.</div>
-		</div>
-    <p>10/09/2022</p>
-	</div>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</div>
-
-<script>
-var main = document.querySelector(".main")
-var words = "Java Python Web CSS HTML Javascript"
-var words = words.split(" ")
-var i = 0
-var tmp = words[i].split("")
-console.log(tmp)
-
-function typing() {
-	if (tmp.length == 0) {
-		deleting()
-		return
-	}
-	main.innerHTML += tmp.shift()
-	setTimeout(typing,500)
-}
-
-function deleting() {
-	if (main.innerText == "") {
-		if (i == words.length-1) {
-			i = 0
-			tmp = words[i].split("")
-			typing()
-			return
-		}
-		tmp = words[++i].split("")
-		typing()
-		return
-	}
-	main.innerText = main.innerText.slice(0,main.innerText.length-1)
-	setTimeout(deleting,300)
-}
-
-typing()
-//# sourceURL=userscript.js
-</script>
+  <div class="container">
+    <div class="txt">
+      <h1>@waiyanmt</h1>
+      <hr>
+      <div class="box">
+        <div>I am a</div>
+        <div class="main"></div>
+        <div>developer.</div>
+      </div>
+      <p>10/09/2022</p>
+    </div>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>

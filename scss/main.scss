@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+@mixin cube($dimension, $speed, $lefty) {
+  width: $dimension;
+  height: $dimension;
+  position: absolute;
+  left: $lefty;
+  bottom: -30%;
+  background-color: white;
+  border-radius: 10px;
+  animation: rotate 10s linear infinite;
+  animation-duration: $speed;
+  list-style-type: none;
+  transform: translateY(0%) rotate(0deg);
+}
+@keyframes rotate {
+  to {
+    transform: translateY(-1000%) rotate(720deg);
+    opacity: 0.001;
+    border-radius: 50%;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #4ac29a;
+  background: -webkit-linear-gradient(to right, #bdfff3, #4ac29a);
+  background: linear-gradient(to right, #bdfff3, #4ac29a);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @for $i from 1 through 30 {
+    $rand: random(100) * 1px;
+    $speed: random(40) * 1s + 5s;
+    li:nth-child(#{$i}) {
+      @include cube($rand, $speed, $i * 5%);
+    }
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.txt {
+  width:500px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 0px;
+  z-index: 2;
+}
+
+li {
+  list-style-type: none;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: darkgreen;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid white;
+  opacity: 0.5;
+}
+
+.box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  div.main {
+    border-right: 1px solid white;
+    padding-right: 3px;
+    animation: blink 1s linear infinite;
+  }
+  div {
+    margin: 0px 2px;
+  }
+}
+
+@keyframes blink {
+  to {
+    border: hidden;
+  }
+}
+
+@media screen and (max-width:600px) {
+    .txt {
+        width:300px;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 10px;
+}
