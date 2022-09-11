@@ -33,11 +33,11 @@
   justify-content: center;
   align-items: center;
 
-  @for $i from 1 through 30 {
+  @for $i from 1 through 10 {
     $rand: random(100) * 1px;
     $speed: random(40) * 1s + 5s;
     li:nth-child(#{$i}) {
-      @include cube($rand, $speed, $i * 5%);
+      @include cube($rand, $speed, $i * 8%);
     }
   }
 }
